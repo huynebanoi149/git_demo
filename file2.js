@@ -1,2 +1,3 @@
-//sdfghjk
-//ádfg
+function helloWorld() {
+    console.log("Hello, World!");
+}
