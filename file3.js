@@ -3,3 +3,4 @@ function greet(name) {
 }
 
 console.log(greet("main"));
+console.log(greet("Chuy"));
