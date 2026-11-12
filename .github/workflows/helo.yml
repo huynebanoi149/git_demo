@@ -1,0 +1,25 @@
+name: Hello Actions
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  chao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lay code ve
+        uses: actions/checkout@v4
+
+      - name: In loi chao
+        run: echo "Xin chao tu GitHub Actions!"
+
+      - name: Liet ke file trong repo
+        run: ls -la
+
+      - name: Thong tin lan chay
+        run: |
+          echo "Nhanh: ${{ github.ref_name }}"
+          echo "Nguoi push: ${{ github.actor }}"
+          echo "Commit: ${{ github.sha }}"
